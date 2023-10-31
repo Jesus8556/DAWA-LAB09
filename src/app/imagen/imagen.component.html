@@ -1,0 +1,26 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="row" *ngFor="let imageUrl of imageUrls.slice(0, 6)">
+                <div class="col" >
+                    <div class="card shadow-sm">
+                        <img [src]="imageUrl.url" class="bd-placeholder-img card-img-top" alt="Image" width="100%" height="225">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ imageUrl.title }}</h5>
+                            <p class="card-text">{{imageUrl.descripcion}}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
